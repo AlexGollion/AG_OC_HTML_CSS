@@ -1,36 +1,34 @@
+/* css pour les éléments html générique*/
+
+* {
+    font-family: 'Raleway', 'sans-serif';
+}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 15px;
-    margin-left: 15px;
 }
 
-#logo {
-    width: 100px;
-    height: 10%;
-    object-fit: contain;
-    margin-top: 10px;
+body {
+    margin-right: 35px;
+    margin-left: 35px;
 }
 
-nav {
-    font-family: 'Raleway', sans-serif;
-}
-
-.ul_nav {
+section, div {
     display: flex;
-    flex-direction: row;
-    list-style: none;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.li_nav {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 10px;
+h2 {
+    font-size: 25px;
 }
 
-.li_nav:hover {
-    border-top: 2px #0065FC solid;
+h2, h3 {
+    font-weight: bold;
 }
 
 a {
@@ -41,6 +39,416 @@ a:visited {
     color: black;
 }
 
-a:hover {
+/*css du header*/
+
+#logo {
+    width: 100px;
+    height: 10%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.ul-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.li-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    border-top: 2px white solid;
+    width: 125px;
+    height: auto;
+}
+
+.li-nav:hover {
+    border-top: 2px #0065FC solid;
+}
+
+.li-nav a:hover {
     color: #0065FC;
+}
+
+/*css pour le formulaire*/
+
+.formulaire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 49px;
+}
+
+#location-dot {
+    background-color: #D9D9D9;
+    font-size: 25px;
+    padding: 5px;
+    width: 50px;
+    height: 80%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#placement-form {
+    display: flex;
+    flex-direction: row;
+}
+
+#in-search {
+    text-decoration: none;
+    width: 232px;
+    height: 49px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#btn-search {
+    background-color: #0065FC;
+    border: solid 10px;
+    border-color: #0065FC;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 132px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.fa-magnifying-glass{
+    visibility: hidden;
+    /*
+     style="color: white; font-size: 25px;"
+     */
+}
+
+.filtres {  
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 67px;
+}
+
+#titre-filtre {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.ul-filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 0px;
+}
+
+.li-filtres {
+    border: 5px solid;
+    border-color: #D9D9D9;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 30%/100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+    margin-left: 30px;
+    width: auto;
+    height: 25%;
+    writing-mode: horizontal-tb;
+    
+}
+
+.li-filtres:hover{
+    background-color: #DEEBFF;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: 2px solid #D9D9D9;
+    border-radius: 50%;
+    color: #0065FC; 
+    margin: 5px; 
+    padding: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+/*css pour les hebergements à Marseille et les plus populaire*/
+
+#bolck-hebergement-populaire {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 5px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.star-gray {
+    color: #D9D9D9;
+}
+
+/*css pour la partie hébergement*/
+
+.hebergement {
+    position: relative;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.hebergement h2, #a-afficher-plus{
+    padding-left: 15px;
+}
+
+.hebergement h3 {
+    padding-bottom: 10px;
+}
+
+#a-afficher-plus {
+    position: absolute;
+    bottom: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.block-hebergement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*css card hebergement*/
+
+.card h3 {
+    font-size: 20px;
+}
+
+.card-hebergement {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    width: 30%;
+    height: auto;
+}
+
+.card h3, .card-hebergement p{
+    margin-bottom: 0px;
+    margin: 2px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-hebergement {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0px;
+    width: 100%;
+}
+
+.card-hebergement img{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.euros {
+    font-weight: bold;
+}
+
+/*css pour la partie populaire*/
+
+.populaire {
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    width: 33%;
+    height: auto;
+    padding: 5px;
+}
+
+#titre-populaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+
+/*css card populaire*/
+
+.card-populaire {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 5px;
+    width: 80%;
+    height: 30%;
+}
+
+.card-populaire img {
+    border-radius: 20px 0px 0px 20px;
+    width: 34%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+.container-populaire {
+    display: flex;
+    width: 60%;
+    height: auto;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+}
+
+.stars-populaire {
+    position: absolute;
+    bottom: 2%;
+}
+
+/*css pour la partie activité*/
+
+.activite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+/*css card activité*/
+
+.card-activite {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    width: 20%;
+    height: auto;
+}
+
+
+.card-activite:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-activite img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-activite h3 {
+    padding: 5px;
+    font-size: 20px;
+}
+
+/*css du footer*/
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 200px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer a {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+#footer-a-propos {
+    left: 8%;
+}
+
+#footer-hebergement {
+    left: 38%;
+}
+
+#footer-assistance {
+    left: 68%;
 }
