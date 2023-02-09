@@ -28,16 +28,20 @@
 
     <main>
         <section>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <h1>Trouver votre hébergement 
+                pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="formulaire">          
                 <div id="location-dot">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <form method="get" action="" id="placement-form">
-                    <input type="search" id="in-search" name="rechercher">
-                    <button id="btn-search">
-                        Rechercher <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="in-search" name="rechercher" value="Marseille, France">
+                    <button id="btn-search-txt">
+                        Rechercher 
+                    </button>
+                    <button id="btn-search-icon">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
             </div>
@@ -45,21 +49,21 @@
                 <h2 id="titre-filtre">Filtres</h2>
                 <ul class="ul-filtres">
                     <li class="li-filtres">
-                        <i class="fa-sharp fa-solid fa-money-bill-wave" style="color: #0065FC; margin: 10px;"></i>
+                        <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
                         <p>Economique</p>
                     </li>
                     <li class="li-filtres">
-                        <i class="fa-solid fa-person" style="color: #0065FC; margin: 10px;"></i>
+                        <i class="fa-solid fa-person"></i>
                         <p>Familial</p>
                     </li>
                 </ul>
                 <ul class="ul-filtres">
                     <li class="li-filtres"> 
-                        <i class="fa-solid fa-heart" style="color: #0065FC; margin: 10px;"></i>
+                        <i class="fa-solid fa-heart"></i>
                         <p>Romantique</p>
                     </li>
                     <li class="li-filtres">
-                        <i class="fa-solid fa-dog" style="color: #0065FC; margin: 10px;"></i>
+                        <i class="fa-solid fa-dog"></i>
                         <p>Animaux autorisés</p>
                     </li>
                 </ul>
@@ -72,55 +76,57 @@
             </div>
         </section>
 
-        <div id="bolck-hebergement-populaire">
+        <div id="block-hebergement-populaire">
             <div class="populaire">
                 <section id="titre-populaire">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line" style="color: #0065FC; font-size: 25px;"></i>
                 </section>
-                              
-                <a href="#" class="card card-populaire">
-                    <img src="images/Images_Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="populaire">
-                    <section class="container-populaire">
-                        <h3>Hôtel Le soleil du <br>matin</h3>
-                        <p>Nuit à partir de 128<span class="euros">€</span></p>
-                        <div class="stars stars-populaire">
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star star-gray"></i>
-                        </div>
-                    </section>
-                </a> 
-                <a href="#" class="card card-populaire">
-                    <img src="images/Images_Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="populaire">
-                    <section class="container-populaire">
-                        <h3>Chambre d'Hôtes Au <br>coeur de l'eau</h3>
-                        <p>Nuit à partir de 71<span class="euros">€</span></p>
-                        <div class="stars stars-populaire">
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star star-gray"></i>
-                        </div>
-                    </section>
-                </a>
-                <a href="#" class="card card-populaire">
-                    <img src="images/Images_Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="populaire">
-                    <section class="container-populaire">
-                        <h3>Hôtel Bleu et Blanc</h3>
-                        <p>Nuit à partir de 68<span class="euros">€</span></p>
-                        <div class="stars stars-populaire">
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star" ></i>
-                            <i class="fa-solid fa-star star-gray"></i>
-                        </div>
-                    </section>
-                </a>
+                            
+                <div id="block-card-populaire">
+                    <a href="#" class="card card-populaire">
+                        <img src="images/Images_Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="populaire">
+                        <section class="container-populaire">
+                            <h3>Hôtel Le soleil du <br>matin</h3>
+                            <p>Nuit à partir de 128<span class="euros">€</span></p>
+                            <div class="stars stars-populaire">
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star star-gray"></i>
+                            </div>
+                        </section>
+                    </a> 
+                    <a href="#" class="card card-populaire">
+                        <img src="images/Images_Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="populaire">
+                        <section class="container-populaire">
+                            <h3>Chambre d'Hôtes Au <br>coeur de l'eau</h3>
+                            <p>Nuit à partir de 71<span class="euros">€</span></p>
+                            <div class="stars stars-populaire">
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star star-gray"></i>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#" class="card card-populaire">
+                        <img src="images/Images_Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="populaire">
+                        <section class="container-populaire">
+                            <h3>Hôtel Bleu et Blanc</h3>
+                            <p>Nuit à partir de 68<span class="euros">€</span></p>
+                            <div class="stars stars-populaire">
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star" ></i>
+                                <i class="fa-solid fa-star star-gray"></i>
+                            </div>
+                        </section>
+                    </a>
+                </div>
             </div>
 
             <section class="hebergement">
@@ -218,7 +224,8 @@
         </div>  
         
         <section>
-            <h2 id="activite">Activités à Marseille<h2>
+            <h2 id="activite">Activités à 
+                Marseille</h2>
             <div class="activite">
                 <a href="#" class="card-activite">
                     <img src="images/Images_Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activite">

@@ -11,6 +11,7 @@ header {
 }
 
 body {
+    max-width: 1400px;
     margin-right: 35px;
     margin-left: 35px;
 }
@@ -111,12 +112,13 @@ a:visited {
     padding: 15px;
 }
 
-#btn-search {
+#btn-search-txt {
     background-color: #0065FC;
     border: solid 10px;
     border-color: #0065FC;
     color: white;
     font-size: 20px;
+    font-weight: bold;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 132px;
@@ -124,10 +126,9 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 25px;
 }
 
-.fa-magnifying-glass{
+#btn-search-icon{
     visibility: hidden;
     /*
      style="color: white; font-size: 25px;"
@@ -145,7 +146,6 @@ a:visited {
 
 #titre-filtre {
     font-size: 23px;
-    font-weight: bold;
 }
 
 .ul-filtres {
@@ -176,7 +176,11 @@ a:visited {
     width: auto;
     height: 25%;
     writing-mode: horizontal-tb;
-    
+}
+
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+    color: #0065FC; 
+    margin: 10px;
 }
 
 .li-filtres:hover{
@@ -205,7 +209,7 @@ a:visited {
 
 /*css pour les hebergements à Marseille et les plus populaire*/
 
-#bolck-hebergement-populaire {
+#block-hebergement-populaire {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -451,4 +455,339 @@ footer a {
 
 #footer-assistance {
     left: 68%;
+}
+
+/*css pour la version tablette */
+
+@media screen and (max-width: 992px) {
+
+    body {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .li-filtres {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    #titre-filtre {
+        font-size: 22px;
+    }
+
+    #block-hebergement-populaire {
+        flex-direction: column-reverse;
+    }
+
+    .card h3 {
+        font-size: 17px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .hebergement {
+        width: 100%;
+    }
+
+    #a-afficher-plus {
+        position: inherit;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .populaire {
+        width: 98%;
+        padding-left: 25px;
+    }
+
+    #titre-populaire {
+        width: 100%;
+    }
+
+    #block-card-populaire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .card-populaire {
+        width: 30%;
+        margin: 0px;
+    }
+
+    .container-populaire {
+        width: 50%;
+        padding-left: 2px;
+    }
+
+    .card-populaire img {
+        width: 40%;
+        height: 150px;
+    }
+
+    .card-activite img{ 
+        height: 250px;
+    }
+
+    .card-activite {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0px;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+        white-space: pre-line;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .ul-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        list-style: none;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .li-nav {
+        display: flex;
+        margin: 0px;
+        padding-top: 10px;
+        border-bottom: 2px #D9D9D9 solid;
+        width: 50%;
+    }
+    
+    .li-nav:hover {
+        border-bottom: 2px #0065FC solid;
+        border-top: 0px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 7px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #location-dot {
+        width: 45px;
+    }
+
+    #placement-form {
+        position: relative;
+    }
+
+    #in-search {
+        position: absolute;
+        left: 0px;
+        text-decoration: none;
+        width: 200%;
+        height: 49px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px;
+    }
+    
+    #btn-search-txt {
+        visibility: hidden;
+    }
+    
+    #btn-search-icon{
+        visibility: visible;
+        position: absolute;
+        left: 200%;
+        background-color: #0065FC;
+        border: solid 10px #0065FC;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: auto;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 25px;
+    }
+
+    .filtres {
+        flex-direction: column;
+        font-size: 15px;
+        padding: 0px;
+        height: auto;
+    }
+
+    .ul-filtres {
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+
+    .li-filtres {
+        justify-content: left;
+        width: 50%;
+        height: auto;
+        border: 3px solid;
+        border-color: #D9D9D9;
+        font-size: 16px;
+        border-radius: 30%/100%;
+        padding: 0px;
+        padding-left: 5px;
+        margin-right: 15px;
+        margin-left: 5px;
+    }
+
+    .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    #block-hebergement-populaire {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .hebergement {
+        position: inherit;
+        flex-direction: column;
+        width: auto;
+        background-color: white;
+        border-color: white;
+        border-radius: 0px;
+    }
+
+    .hebergement h2 {
+        display: flex;
+        align-items: center;
+        width: 85%;
+        padding-left: 0px;
+    }
+
+    .block-hebergement {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-hebergement img{
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 5px;
+    }
+
+    #a-afficher-plus {
+        visibility: hidden;
+    }
+
+    .card {
+        width: 85%;
+        height: auto;
+    }
+
+    .populaire {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        border-radius: 0px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #titre-populaire {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #block-card-populaire {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-populaire {
+        margin-bottom: 15px;
+    }
+
+    .card-populaire img {
+        width: 30%;
+        height: 20 0px;
+    }
+
+    .activite {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    section h2 {
+        white-space: pre-line;
+    }
+
+    .card-activite {
+        width: 90%;
+    }
+
+    .card-activite img {
+        height: 200px;
+    }
+
+    footer {
+        position: inherit;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    footer div {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer a {
+        font-weight: 300;
+    }
+
 }
